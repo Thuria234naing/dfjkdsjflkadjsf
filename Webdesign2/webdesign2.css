@@ -1,0 +1,803 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    /* font-family: 'Fasthand', cursive; */
+    /* font-family: 'Island Moments', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Kolker Brush', cursive; */
+}
+
+:root {
+    --bg-color: rgb(249, 249, 249);
+    --texts-color: black;
+    --fontWeight-one: 300;
+    --fontWeight-two: 600;
+    --fontWeight-three: 900;
+    --font-size2: 40px;
+    --font-size1: 20px;
+    --font-family1: 'Fasthand',
+        cursive;
+    --font-family2: 'Roboto', sans-serif;
+    ;
+}
+
+/* ready-made classes  */
+.inline {
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fontFamily1 {
+    font-family: var(--font-family1);
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.fontFamily2 {
+    font-family: var(--font-family2);
+}
+
+.textsCenter {
+    text-align: center;
+}
+
+.middle {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.padding1 {
+    padding: 20px 0;
+}
+
+.padding2 {
+    padding: 40px 0;
+}
+
+.fontsize1 {
+    font-size: var(--font-size1);
+}
+
+.fontsize2 {
+    font-size: var(--font-size2);
+}
+
+/* container1  */
+/* menuBarSection */
+.menuBar {
+    display: flex;
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+
+.FS {
+    font-size: 30px;
+    align-self: center;
+    margin-right: 10px;
+}
+
+
+
+.logo {
+    display: flex;
+    align-self: center;
+}
+
+.logo p {
+    text-align: center;
+}
+
+.logo small {
+    font-size: 10px;
+}
+
+.menuItems {
+    display: flex;
+    align-items: center;
+}
+
+.menuTexts {
+    display: flex;
+    gap: 50px;
+}
+
+a {
+    color: var(--texts-color);
+}
+
+li {
+    position: relative;
+}
+
+li a::after {
+    content: "";
+    background-color: lightpink;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* end menuBar */
+/* bg start  */
+.bgImage {
+    position: relative;
+
+}
+
+.bgImage img {
+    width: 30%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.bgImage i {
+    margin: 0 5px;
+}
+
+.textsOnBg {
+    position: absolute;
+    top: 150px;
+    /* background-color: lightblue; */
+    left: 450px;
+
+}
+
+.textsOnBg span {
+    padding: 0px 50px 0px 50px;
+}
+
+.textsOnBg p {
+    padding: 10px 0;
+}
+
+.textsOnBg .travel {
+    font-size: 70px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.textsOnBg .secondTravel {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.textsOnBg .thirdTravel {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.textsOnBg .fourthTravel {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.textsOnBg .fifthTravel {
+    text-align: center;
+    /* padding: 40px 0px; */
+    background-color: pink;
+    border: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+
+/* bg end  */
+/* end  container1 */
+/* containerForTravelExperience */
+.travelExperience {
+    /* background-color: lightgreen; */
+    height: 100%;
+
+}
+
+.travelTitle {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.travelImageContainer1 {
+    /* background-color: lightcoral; */
+    width: 90%;
+    margin: 20px auto;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 400px; */
+
+}
+
+.firstBox {
+    height: 310px;
+    width: 150px;
+    background-color: aqua;
+}
+
+.secondBox {
+    height: 310px;
+    width: 230px;
+    background-color: lightcyan;
+}
+
+.thirdBox {
+    height: 300px;
+    width: 630px;
+    background-color: lightseagreen;
+}
+
+.travelImageContainer2 {
+    /* background-color: lightcoral; */
+    width: 90%;
+    /* height: 200px; */
+    margin: 20px auto;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 400px; */
+
+}
+
+.fourthBox {
+    height: 400px;
+    width: 350px;
+    background-color: lightcyan;
+}
+
+/* end  */
+/* start container 2  */
+/* description  */
+.block1 {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+.container2 {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container2 p {
+    padding: 3px 0;
+}
+
+/* end  */
+
+/* image container  */
+.containerForImage {
+    width: 80%;
+    /* height: 500px; */
+    margin: 0 auto;
+    /* background-color: lightcoral; */
+}
+
+.imageContainer {
+    height: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.first {
+    height: 200px;
+    width: 400px;
+    background-color: rebeccapurple;
+}
+
+.second {
+    height: 200px;
+    width: 300px;
+    background-color: red;
+}
+
+.third {
+    height: 200px;
+    width: 180px;
+    background-color: khaki;
+}
+
+.four {
+    height: 250px;
+    width: 300px;
+    background-color: lightcyan;
+}
+
+.five {
+    height: 230px;
+    width: 400px;
+    background-color: lightgreen;
+}
+
+.six {
+    height: 300px;
+    width: 200px;
+    background-color: lightpink;
+}
+
+.seven {
+    height: 200px;
+    width: 350px;
+    background-color: lightseagreen;
+}
+
+.eight {
+    height: 300px;
+    width: 380px;
+    background-color: lightsalmon;
+}
+
+.nine {
+    height: 100px;
+    width: 150px;
+    background-color: lightgrey;
+}
+
+/* end  */
+/* end containter 2  */
+/* start container 3  */
+.container3 {
+    background-color: antiquewhite;
+    width: 80%;
+    margin: 0 auto;
+    /* height: 100px; */
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.container3 p {
+    border-bottom: 3px solid black;
+}
+
+/* end container 3  */
+/* start container 4  */
+.container4 {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: lightcyan; */
+}
+
+
+
+.www p {
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--font-family1);
+    border-bottom: 2px solid black;
+}
+
+.imageShowCase {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 0 20px 0 40px; */
+    gap: 5px;
+}
+
+.box1 {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+}
+
+.box2 {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+}
+
+.box3 {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+}
+
+.box4 {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+}
+
+.box5 {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+}
+
+.box6 {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+.box7 {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+/* end container 4  */
+/* start container 5 */
+.container5 {
+    border-top: 2px solid pink;
+    border-bottom: 2px solid pink;
+}
+
+.firstTexts {
+    text-align: center;
+    font-size: var(--font-size1);
+}
+
+.secondTexts {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.thirdTexts {
+    text-align: center;
+}
+
+.thirdTexts i {
+    padding: 0 5px;
+}
+
+/* end container 5  */
+/* start container 6  */
+.container6 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    border-bottom: 2px solid pink;
+}
+
+.about {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.ourWork {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.services {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+
+
+/* end container 6  */
+/* container 7 */
+.container7 {
+    text-align: center;
+}
+
+/* end container 7 */
+/* responsive  */
+@media (max-width:1200px) {
+    .textsOnBg {
+        position: absolute;
+        top: 150px;
+        /* background-color: lightblue; */
+        /* left: 350px; */
+
+
+    }
+
+    .textsOnBg span {
+        padding: 0px 20px 0px 20px;
+        font-size: 15px;
+    }
+
+    .textsOnBg p {
+        padding: 10px 0;
+    }
+
+    .textsOnBg .travel {
+        font-size: 40px;
+        width: 100%;
+        margin: 0 auto;
+        font-family: var(--font-family2);
+    }
+
+    .textsOnBg .secondTravel {
+        width: 90%;
+        margin: 0 auto;
+        font-family: var(--font-family2);
+    }
+
+    .textsOnBg .thirdTravel {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 60px;
+        font-family: var(--font-family2);
+    }
+
+    .textsOnBg .fourthTravel {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 60px;
+        font-family: var(--font-family2);
+    }
+
+    .textsOnBg .fifthTravel {
+        text-align: center;
+        /* padding: 40px 0px; */
+        background-color: pink;
+        border: 1px solid white;
+        display: inline-block;
+        padding: 10px;
+        font-family: var(--font-family2);
+    }
+}
+
+@media (max-width:968px) {
+    .textsOnBg {
+        position: absolute;
+        top: 150px;
+        /* background-color: lightblue; */
+        left: 350px;
+
+
+    }
+
+    .textsOnBg span {
+        padding: 0px 10px 0px 10px;
+        font-size: 15px;
+    }
+
+    .textsOnBg p {
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    .textsOnBg .travel {
+        font-size: 30px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .textsOnBg .secondTravel {
+        width: 90%;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+
+    .textsOnBg .thirdTravel {
+        width: 90%;
+        font-size: 15px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+
+    .textsOnBg .fourthTravel {
+        width: 90%;
+        font-size: 15px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+
+    .textsOnBg .fifthTravel {
+        text-align: center;
+        font-size: 15px;
+        /* padding: 40px 0px; */
+        background-color: pink;
+        border: 1px solid white;
+        display: inline-block;
+        padding: 5px;
+
+    }
+}
+
+@media (max-width:608px) {
+    .textsOnBg {
+        position: absolute;
+        top: 150px;
+        /* background-color: lightblue; */
+        left: 250px;
+
+
+    }
+
+    .textsOnBg span {
+        padding: 0px 5px 0px 5px;
+        font-size: 15px;
+    }
+
+    .textsOnBg p {
+        padding: 5px 0;
+        font-size: 10px;
+    }
+
+    .textsOnBg .travel {
+        font-size: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .textsOnBg .secondTravel {
+        width: 90%;
+        font-size: 10px;
+        margin: 0 auto;
+    }
+
+    .textsOnBg .thirdTravel {
+        width: 90%;
+        font-size: 10px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+
+    .textsOnBg .fourthTravel {
+        width: 90%;
+        font-size: 10px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+
+    .textsOnBg .fifthTravel {
+        text-align: center;
+        font-size: 10px;
+        /* padding: 40px 0px; */
+        background-color: pink;
+        border: 1px solid white;
+        display: inline-block;
+        padding: 5px;
+
+    }
+
+    .menuBar {
+        display: flex;
+        /* justify-content: space-around; */
+        flex-direction: column;
+        background-color: whitesmoke;
+    }
+
+    .logo small {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .menuItems {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+
+
+    }
+
+    .menuTexts {
+        gap: 40px;
+    }
+}
+
+@media (max-width:450px) {
+    .textsOnBg {
+        position: absolute;
+        top: 140px;
+        /* background-color: lightblue; */
+        left: 170px;
+
+
+    }
+
+    .bgImage img {
+        width: 40%;
+    }
+
+    .textsOnBg span {
+        padding: 0px 5px 0px 5px;
+        font-size: 10px;
+    }
+
+    .textsOnBg p {
+        padding: 10px 0;
+        font-size: 50px;
+    }
+
+    .textsOnBg .travel {
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .textsOnBg .secondTravel {
+        width: 60%;
+        font-size: 10px;
+        margin: 0 auto;
+    }
+
+    .textsOnBg .thirdTravel {
+        width: 90%;
+        font-size: 10px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+
+    .textsOnBg .fourthTravel {
+        width: 90%;
+        font-size: 5px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+
+    .textsOnBg .fifthTravel {
+        text-align: center;
+        font-size: 10px;
+        /* padding: 40px 0px; */
+        background-color: pink;
+        border: 1px solid white;
+        display: inline-block;
+        padding: 5px;
+
+    }
+
+    .menuTexts {
+        gap: 20px;
+    }
+
+    .imageShowCase {
+        justify-content: center;
+    }
+
+    .container6 {
+        gap: 30px;
+    }
+}
+
+/* responsive end   */
+/* css effects  */
+.fifthTravel:hover {
+    transition: 500ms;
+    background-color: white;
+}
+
+/* css effects end  */
+/* end  */
+/* forsignin */
+.signIn{
+    background-color: pink;
+    font-family: 'Roboto', sans-serif;
+    width : 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.sizeAdj1{
+    font-size: 2em;
+    padding: 30px;
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+}
